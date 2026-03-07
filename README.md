@@ -1,1 +1,7 @@
-## End to End Machine Learning Project
+title: Student Performance
+emoji: 🎓
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: app.py
+pinned: false
