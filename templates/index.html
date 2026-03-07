@@ -1,1 +1,155 @@
-<h1> Welcome to Home Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 60px 50px;
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+        .emoji {
+            font-size: 72px;
+            margin-bottom: 20px;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        h1 span {
+            background: linear-gradient(90deg, #e94560, #0f3460, #533483);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 45px;
+        }
+        .stat {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 14px;
+            padding: 18px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stat-number {
+            color: #e94560;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .stat-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: white;
+            text-decoration: none;
+            padding: 16px 48px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff5778, #e94560);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .feature::before {
+            content: '✓';
+            color: #e94560;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji">🎓</span>
+        <h1>Student Exam <span>Performance</span> Indicator</h1>
+        <p>Predict your Math score based on personal background and academic factors using our powerful ML model.</p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Features</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">ML</div>
+                <div class="stat-label">Powered</div>
+            </div>
+        </div>
+
+        <a href="/prediction" class="btn">🚀 Predict Your Score</a>
+
+        <div class="features">
+            <span class="feature">Instant Results</span>
+            <span class="feature">Free to Use</span>
+            <span class="feature">ML Powered</span>
+        </div>
+    </div>
+</body>
+</html>
